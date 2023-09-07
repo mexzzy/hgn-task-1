@@ -10,25 +10,34 @@
     <div class="container">
         <div class="wrapper">
             <div class="box" data-testid="slackUserName">
-                Slack Name : Samuel Meshach
+                <span> Slack Name :</span> <span>Samuel Meshach</span>
             </div>
             <div class="box" data-testid="slackDisplayImage">
-                Slack Display Picture:
-                <img src="" alt="samuel meshach">
+                <span> Slack Display Picture:</span>
+                <img src="myself.jpg" alt="samuel meshach">
             </div>
             <div class="box" data-testid="currentDayOfTheWeek">
-                Current Day of the Week: Thursday 
+                <span> Current Day of the Week:</span>  <span>Thursday </span>
             </div>
             <div class="box" data-testid="currentUTCTime">
-                Current UTC Time: <span id="milliseconds"></span>
+                <span> Current UTC Time:</span> <span id="milliseconds"></span>
             </div>
             <div class="box" data-testid="myTrack">
-                Track: Frontend
+                <span> Track:</span> <span>Frontend</span>
             </div>
             <div class="box" data-testid="githubURL">
-                GitHub URL: <a href=""></a>
+                <span> GitHub URL:</span> <a href="https://github.com/mexzzy/hgn-task-1">GitHub URL</a>
             </div>
         </div>
     </div>
+
+    <script>
+        function timeInMilliseconds() {
+            const currentMilliseconds = new Date().getTime();
+            const timeM = document.getElementById('milliseconds');
+            timeM.innerHTML = currentMilliseconds;
+        }
+        window.onload = timeInMilliseconds;
+    </script>
 </body>
 </html>
