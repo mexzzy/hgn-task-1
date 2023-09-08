@@ -9,37 +9,31 @@
   <body>
     <div class="container">
       <div class="wrapper">
-        <div class="box" data-testid="slackUserName">
-          <span> Slack Name :</span> <span>Samuel Meshach</span>
-        </div>
-        <div class="box" data-testid="slackDisplayImage">
-          <span> Slack Display Picture:</span>
-          <img src="myself.jpg" alt="samuel meshach" />
-        </div>
-        <div class="box" data-testid="currentDayOfTheWeek">
-          <span> Current Day of the Week:</span> <span>Friday </span>
-        </div>
-        <div class="box" data-testid="currentUTCTime">
-          <span> Current UTC Time:</span> <span id="milliseconds"></span>
-        </div>
-        <div class="box" data-testid="myTrack">
-          <span> Track:</span> <span>Frontend</span>
-        </div>
-        <div class="box" data-testid="githubURL">
-          <span> GitHub URL:</span>
-          <a href="https://github.com/mexzzy/hng-task-1">GitHub URL</a>
+          <img
+            src="./images/myPic.jpg"
+            data-testid="slackDisplayImage"
+            alt="Samuel Meshach"
+          />
+        <div class="cover">
+          <div class="box" data-testid="slackUserName">Samuel Meshach</div>
+          <div class="box" data-testid="currentDayOfTheWeek">Friday</div>
+          <span
+            class="box"
+            data-testid="currentUTCTime"
+            id="millisecondsDisplay"
+          ></span>
+          <div class="box" data-testid="myTrack">Frontend</div>
+          <div class="box">
+            <a
+              data-testid="githubURL"
+              href="https://github.com/mexzzy/hng-task-1"
+              >GitHub URL</a
+            >
+          </div>
         </div>
       </div>
     </div>
 
-    <script>
-      function timeInMilliseconds() {
-        const currentMilliseconds = new Date().getTime();
-        const timeM = document.getElementById("milliseconds");
-        timeM.innerHTML = currentMilliseconds;
-      }
-      timeInMilliseconds(); 
-      setInterval(timeInMilliseconds, 100);
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
