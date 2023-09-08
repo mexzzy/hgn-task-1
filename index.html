@@ -17,7 +17,7 @@
           <img src="myself.jpg" alt="samuel meshach" />
         </div>
         <div class="box" data-testid="currentDayOfTheWeek">
-          <span> Current Day of the Week:</span> <span>Thursday </span>
+          <span> Current Day of the Week:</span> <span>Friday </span>
         </div>
         <div class="box" data-testid="currentUTCTime">
           <span> Current UTC Time:</span> <span id="milliseconds"></span>
@@ -38,7 +38,7 @@
         const timeM = document.getElementById("milliseconds");
         timeM.innerHTML = currentMilliseconds;
       }
-      timeInMilliseconds();
+      timeInMilliseconds(); 
       setInterval(timeInMilliseconds, 100);
     </script>
   </body>
